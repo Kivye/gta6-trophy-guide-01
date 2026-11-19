@@ -1,392 +1,600 @@
 {
- "game": "Grand Theft Auto VI",
- "platform": "PlayStation 5",
- "list": "the official 55 trophies, 2026-11-18",
- "trophies": [
-  {
-   "id": 1,
-   "name": "Vice Got a Price!",
-   "description": "Congratulations! You're a Leonida Legend.",
-   "grade": "platinum",
-   "guide": "Earn the other 54 trophies."
-  },
-  {
-   "id": 2,
-   "name": "Just Like Paradise",
-   "description": "Complete Gone Fishing.",
-   "grade": "bronze",
-   "guide": "Finish the opening mission, Gone Fishing."
-  },
-  {
-   "id": 3,
-   "name": "Paradise Lost",
-   "description": "Complete Chapter 1.",
-   "grade": "bronze",
-   "guide": "Finish Chapter 1."
-  },
-  {
-   "id": 4,
-   "name": "T**s Ass Drug Money",
-   "description": "Complete Chapter 2.",
-   "grade": "bronze",
-   "guide": "Finish Chapter 2."
-  },
-  {
-   "id": 5,
-   "name": "Vice City, Baby!",
-   "description": "Complete Chapter 3.",
-   "grade": "bronze",
-   "guide": "Finish Chapter 3."
-  },
-  {
-   "id": 6,
-   "name": "Top Of The World, Ma",
-   "description": "Complete Chapter 4.",
-   "grade": "bronze",
-   "guide": "Finish Chapter 4."
-  },
-  {
-   "id": 7,
-   "name": "You Gotta Know When to Get Off",
-   "description": "Complete the final mission.",
-   "grade": "gold",
-   "guide": "Finish the final mission (gold)."
-  },
-  {
-   "id": 8,
-   "name": "Trust",
-   "description": "Complete Breakfast Run.",
-   "grade": "bronze",
-   "guide": "Finish the mission Breakfast Run."
-  },
-  {
-   "id": 9,
-   "name": "Break the Bank",
-   "description": "Complete The Cartel Heist.",
-   "grade": "bronze",
-   "guide": "Finish the mission The Cartel Heist."
-  },
-  {
-   "id": 10,
-   "name": "Family Matters",
-   "description": "Complete Child's Play.",
-   "grade": "bronze",
-   "guide": "Finish the mission Child's Play."
-  },
-  {
-   "id": 11,
-   "name": "DWNFALL",
-   "description": "Complete Headliners.",
-   "grade": "bronze",
-   "guide": "Finish the mission Headliners."
-  },
-  {
-   "id": 12,
-   "name": "Hi-Jacked",
-   "description": "Complete VCIA Takedown.",
-   "grade": "bronze",
-   "guide": "Finish the mission VCIA Takedown."
-  },
-  {
-   "id": 13,
-   "name": "Snow Storm",
-   "description": "Complete Operation Savage Glory.",
-   "grade": "bronze",
-   "guide": "Finish the mission Operation Savage Glory."
-  },
-  {
-   "id": 14,
-   "name": "A Long Road",
-   "description": "Attain 100% Completion.",
-   "grade": "gold",
-   "guide": "Reach 100% completion (gold)."
-  },
-  {
-   "id": 15,
-   "name": "Cunning Stunts",
-   "description": "Complete 250 Stunts.",
-   "grade": "silver",
-   "guide": "Pull off 250 stunts (silver)."
-  },
-  {
-   "id": 16,
-   "name": "Master of None",
-   "description": "Try each type of activity once.",
-   "grade": "bronze",
-   "guide": "Try all 9 activity types once."
-  },
-  {
-   "id": 17,
-   "name": "The Shootist",
-   "description": "Earn a gold medal in all Shooting Range challenges.",
-   "grade": "silver",
-   "guide": "Gold all 42 Shooting Range challenges (silver)."
-  },
-  {
-   "id": 18,
-   "name": "Top Fun",
-   "description": "Win a Top Fun Drone Race at every location.",
-   "grade": "bronze",
-   "guide": "Win a Top Fun drone race at all 14 locations."
-  },
-  {
-   "id": 19,
-   "name": "Earn Cash, Not Kudos",
-   "description": "Win 20 different races.",
-   "grade": "bronze",
-   "guide": "Win 20 different races."
-  },
-  {
-   "id": 20,
-   "name": "Baited My Tackle",
-   "description": "Beat Cal in a fishing challenge.",
-   "grade": "bronze",
-   "guide": "Beat Cal in a fishing challenge."
-  },
-  {
-   "id": 21,
-   "name": "Stick Fiddler",
-   "description": "Complete an arcade game.",
-   "grade": "bronze",
-   "guide": "Finish one arcade game."
-  },
-  {
-   "id": 22,
-   "name": "Road to Rehabilitation",
-   "description": "Complete the final mission for Andy.",
-   "grade": "bronze",
-   "guide": "Finish Andy's last mission."
-  },
-  {
-   "id": 23,
-   "name": "This Was No Boat Accident",
-   "description": "Complete the final mission for Kenton.",
-   "grade": "bronze",
-   "guide": "Finish Kenton's last mission."
-  },
-  {
-   "id": 24,
-   "name": "The Lone Rider",
-   "description": "Complete the final mission for Billy.",
-   "grade": "bronze",
-   "guide": "Finish Billy's last mission."
-  },
-  {
-   "id": 25,
-   "name": "Strangers & Freaks",
-   "description": "Complete 8 mission strands for strangers across the state of Leonida.",
-   "grade": "silver",
-   "guide": "Finish 8 stranger strands (silver)."
-  },
-  {
-   "id": 26,
-   "name": "Supply & Demand",
-   "description": "Complete the final mission for Randy.",
-   "grade": "bronze",
-   "guide": "Finish Randy's last mission."
-  },
-  {
-   "id": 27,
-   "name": "Spin On This!",
-   "description": "Complete the final mission for Tyrone.",
-   "grade": "bronze",
-   "guide": "Finish Tyrone's last mission."
-  },
-  {
-   "id": 28,
-   "name": "Positive Mental Attitude",
-   "description": "Meditate at every spot across Leonida.",
-   "grade": "bronze",
-   "guide": "Meditate at all 18 spots."
-  },
-  {
-   "id": 29,
-   "name": "Fair Game",
-   "description": "Hunt a unique animal for Bret.",
-   "grade": "bronze",
-   "guide": "Hunt the unique animal for Bret."
-  },
-  {
-   "id": 30,
-   "name": "Don't Touch My Deck",
-   "description": "Complete 3 Collectible Card sets.",
-   "grade": "silver",
-   "guide": "Complete 3 collectible card sets (silver)."
-  },
-  {
-   "id": 31,
-   "name": "You WAiNKer!",
-   "description": "WAiNK It at 100 locations.",
-   "grade": "silver",
-   "guide": "WAiNK It at 100 locations (silver)."
-  },
-  {
-   "id": 32,
-   "name": "One Last Thing",
-   "description": "Complete 50 Challenges.",
-   "grade": "bronze",
-   "guide": "Finish 50 challenges."
-  },
-  {
-   "id": 33,
-   "name": "Hot Together",
-   "description": "Lose a 4 star Wanted Level with your partner and escape the heat.",
-   "grade": "bronze",
-   "guide": "Lose a 4-star wanted level with your partner."
-  },
-  {
-   "id": 34,
-   "name": "Retail Therapy",
-   "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
-   "grade": "bronze",
-   "guide": "Rob 3 shops in a row with your partner, keeping your wanted level."
-  },
-  {
-   "id": 35,
-   "name": "Whip It Good",
-   "description": "Discover 100 vehicles.",
-   "grade": "bronze",
-   "guide": "Discover 100 vehicles."
-  },
-  {
-   "id": 36,
-   "name": "Gunslinger",
-   "description": "Take down 5 enemies in a single use of Combat Focus.",
-   "grade": "bronze",
-   "guide": "Down 5 enemies in one Combat Focus."
-  },
-  {
-   "id": 37,
-   "name": "Catch Me If You Can",
-   "description": "Make an unscheduled departure at VCIA.",
-   "grade": "bronze",
-   "guide": "Leave VCIA in an unscheduled way."
-  },
-  {
-   "id": 38,
-   "name": "Challenging Tank",
-   "description": "Kinda hot in these Rhinos.",
-   "grade": "bronze",
-   "guide": "Deal with Rhinos (tanks)."
-  },
-  {
-   "id": 39,
-   "name": "Sneakthief",
-   "description": "Rob a jewelry store without being detected.",
-   "grade": "bronze",
-   "guide": "Rob a jewelry store without being seen."
-  },
-  {
-   "id": 40,
-   "name": "Maximum Withdrawal",
-   "description": "Rob 5 Bank Vaults and escape.",
-   "grade": "silver",
-   "guide": "Rob 5 bank vaults and escape (silver)."
-  },
-  {
-   "id": 41,
-   "name": "A Classic Blitz Play",
-   "description": "Rob an Armored Truck and escape.",
-   "grade": "bronze",
-   "guide": "Rob an armored truck and escape."
-  },
-  {
-   "id": 42,
-   "name": "The Goodtime State",
-   "description": "Explore all of Leonida.",
-   "grade": "bronze",
-   "guide": "Explore all 52 areas of Leonida."
-  },
-  {
-   "id": 43,
-   "name": "Pest Control",
-   "description": "Rob an Illegal Operation belonging to each gang.",
-   "grade": "bronze",
-   "guide": "Rob one illegal operation of each of the 9 gangs."
-  },
-  {
-   "id": 44,
-   "name": "In The Beginning…",
-   "description": "Enjoy a cocktail with a view on Ocean Beach.",
-   "grade": "bronze",
-   "guide": "Have a cocktail with a view on Ocean Beach."
-  },
-  {
-   "id": 45,
-   "name": "Capital Offense",
-   "description": "Smash your way out of a vehicle showroom in classic style.",
-   "grade": "bronze",
-   "guide": "Smash out of a vehicle showroom in style."
-  },
-  {
-   "id": 46,
-   "name": "Let’s Go Bowling",
-   "description": "Follow-through at the Kolt & Associates' bowling alley.",
-   "grade": "bronze",
-   "guide": "Play bowling at the Kolt & Associates alley."
-  },
-  {
-   "id": 47,
-   "name": "Personal Best",
-   "description": "A partnership with mass appeal.",
-   "grade": "bronze",
-   "guide": "A partnership moment with mass appeal."
-  },
-  {
-   "id": 48,
-   "name": "Actions Speak Louder",
-   "description": "Choices made (for better or worse).",
-   "grade": "bronze",
-   "guide": "Make choices (PSN tracks a count to 500)."
-  },
-  {
-   "id": 49,
-   "name": "Bad Luck, I Guess",
-   "description": "Second time's the charm.",
-   "grade": "bronze",
-   "guide": "Succeed on a second try."
-  },
-  {
-   "id": 50,
-   "name": "The Truth Is Out There",
-   "description": "What the hell just happened?",
-   "grade": "bronze",
-   "guide": "Witness something strange."
-  },
-  {
-   "id": 51,
-   "name": "Ten Pin",
-   "description": "Bowl 'em over with a melee drive-by.",
-   "grade": "bronze",
-   "guide": "Knock someone down with a melee drive-by."
-  },
-  {
-   "id": 52,
-   "name": "Dime on the Dollar",
-   "description": "Earn $250,000 laundering Marked Bills through your contacts.",
-   "grade": "bronze",
-   "guide": "Launder $250,000 of marked bills."
-  },
-  {
-   "id": 53,
-   "name": "Treat Yo Self",
-   "description": "Spend $100,000 across all shops.",
-   "grade": "bronze",
-   "guide": "Spend $100,000 in shops."
-  },
-  {
-   "id": 54,
-   "name": "Little Boxes",
-   "description": "Purchase all garage properties.",
-   "grade": "bronze",
-   "guide": "Buy all 8 garage properties."
-  },
-  {
-   "id": 55,
-   "name": "On the Spot",
-   "description": "Register 10 vehicles to the Scooter Bros app.",
-   "grade": "bronze",
-   "guide": "Register 10 vehicles in the Scooter Bros app."
-  }
- ]
+  "game": "Grand Theft Auto VI",
+  "platform": "PlayStation 5",
+  "list": "the official 55 trophies, 2026-11-18",
+  "trophies": [
+    {
+      "id": 1,
+      "name": "Vice Got a Price!",
+      "description": "Congratulations! You're a Leonida Legend.",
+      "grade": "platinum",
+      "guide": "Treat the platinum as the final audit: earn the other 54 trophies before checking this off. Use the grade totals to locate unfinished entries, and keep the separate 100% completion goal in view; finishing the story alone does not cover this list.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 2,
+      "name": "Just Like Paradise",
+      "description": "Complete Gone Fishing.",
+      "grade": "bronze",
+      "guide": "Follow the story until Gone Fishing is recorded as complete. This entry is tied to that named mission, so leave it open if you have only started it; the description does not add a medal or difficulty requirement.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 3,
+      "name": "Paradise Lost",
+      "description": "Complete Chapter 1.",
+      "grade": "bronze",
+      "guide": "Finish the Chapter 1 story arc rather than counting individual missions toward this trophy. Before moving on, consider the unconfirmed balcony-meditation precaution described under Positive Mental Attitude and retain a separate save.\nSources: Output Lag trophy list; GTABase trophy list; GTA-Zone missable reporting — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 4,
+      "name": "T**s Ass Drug Money",
+      "description": "Complete Chapter 2.",
+      "grade": "bronze",
+      "guide": "Continue the main narrative through the end of Chapter 2. Check the chapter's completion before marking this entry earned; no optional activity or performance threshold is stated for this trophy.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 5,
+      "name": "Vice City, Baby!",
+      "description": "Complete Chapter 3.",
+      "grade": "bronze",
+      "guide": "Complete the Chapter 3 narrative milestone. During this chapter, the research also reports a time-sensitive Race Against Yago contribution to the stranger-strand total; that is a planning note, not a confirmed missable trophy.\nSources: Output Lag trophy list; GTABase trophy list; GTA-Zone missable reporting — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 6,
+      "name": "Top Of The World, Ma",
+      "description": "Complete Chapter 4.",
+      "grade": "bronze",
+      "guide": "Advance the story to the completion of Chapter 4. Use this as a narrative checkpoint, then compare the separate named-mission entries against your unlocks instead of assuming that a chapter check-off completes every side strand.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 7,
+      "name": "You Gotta Know When to Get Off",
+      "description": "Complete the final mission.",
+      "grade": "gold",
+      "guide": "Finish the final story mission to meet this gold trophy's requirement. Once it unlocks, move to the collectible and activity checklist; the finale and 100% completion are separate gold trophies.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 8,
+      "name": "Trust",
+      "description": "Complete Breakfast Run.",
+      "grade": "bronze",
+      "guide": "Play the story mission Breakfast Run through to its completion. The published requirement names the mission only, so this guide does not prescribe an unverified route, choice, or medal target.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 9,
+      "name": "Break the Bank",
+      "description": "Complete The Cartel Heist.",
+      "grade": "bronze",
+      "guide": "Complete The Cartel Heist as a story objective. Keep this separate from Maximum Withdrawal: that trophy asks for five bank-vault robberies and escapes, while this one names a specific mission.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 10,
+      "name": "Family Matters",
+      "description": "Complete Child's Play.",
+      "grade": "bronze",
+      "guide": "Finish Child's Play and verify the mission is complete before ticking this trophy. There is no stated score, choice, or difficulty condition in the description, so avoid treating those as additional requirements.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 11,
+      "name": "DWNFALL",
+      "description": "Complete Headliners.",
+      "grade": "bronze",
+      "guide": "Complete the named mission Headliners. Track this story unlock independently from the chapter milestones; the source list does not specify extra performance conditions for it.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 12,
+      "name": "Hi-Jacked",
+      "description": "Complete VCIA Takedown.",
+      "grade": "bronze",
+      "guide": "See VCIA Takedown through to completion. Do not confuse this mission trophy with Catch Me If You Can, whose separate description concerns an unscheduled departure at VCIA.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 13,
+      "name": "Snow Storm",
+      "description": "Complete Operation Savage Glory.",
+      "grade": "bronze",
+      "guide": "Finish Operation Savage Glory for this story entry. The source list supplies the mission name but no special approach or score requirement, so use mission completion as the checklist checkpoint.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 14,
+      "name": "A Long Road",
+      "description": "Attain 100% Completion.",
+      "grade": "gold",
+      "guide": "Work toward the game's 100% Completion total alongside the trophy checklist. Do not equate earning the final-mission gold with this gold; audit exploration, activities, and collections against the in-game completion record before checking it off.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 15,
+      "name": "Cunning Stunts",
+      "description": "Complete 250 Stunts.",
+      "grade": "silver",
+      "guide": "Build a total of 250 completed stunts, recording your current figure after each session. Break the target into smaller batches and check the game's recorded progress rather than treating every attempted stunt as a success.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 250,
+      "countSource": "official description"
+    },
+    {
+      "id": 16,
+      "name": "Master of None",
+      "description": "Try each type of activity once.",
+      "grade": "bronze",
+      "guide": "Sample every activity type instead of repeating a favorite activity. Keep a short record of the types you have tried, and compare it with the in-game activity list; the description itself does not enumerate those types.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 9,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 17,
+      "name": "The Shootist",
+      "description": "Earn a gold medal in all Shooting Range challenges.",
+      "grade": "silver",
+      "guide": "Earn gold in every Shooting Range challenge, rather than merely finishing each challenge. The starter's tracker target is 42; use the count field for gold results only and revisit any challenge still below gold.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 42,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 18,
+      "name": "Top Fun",
+      "description": "Win a Top Fun Drone Race at every location.",
+      "grade": "bronze",
+      "guide": "Win a Top Fun Drone Race at each location, checking off venues rather than counting repeat wins. The starter lists 14 locations; record each new venue so an extra win at an old one does not inflate your manual tracker.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 14,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 19,
+      "name": "Earn Cash, Not Kudos",
+      "description": "Win 20 different races.",
+      "grade": "bronze",
+      "guide": "Aim for wins in 20 distinct races. Keep a record of race identities as you go, since repeated victories in the same race do not satisfy the word 'different' in the official requirement.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 20,
+      "countSource": "official description"
+    },
+    {
+      "id": 20,
+      "name": "Baited My Tackle",
+      "description": "Beat Cal in a fishing challenge.",
+      "grade": "bronze",
+      "guide": "Find Cal's fishing challenge and win the contest against Cal. General fishing progress is not the stated condition, so wait for that particular challenge result before marking this complete.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 21,
+      "name": "Stick Fiddler",
+      "description": "Complete an arcade game.",
+      "grade": "bronze",
+      "guide": "Take one arcade game all the way to completion. Simply starting a cabinet or ending an early attempt is not enough to establish the published requirement; use the game's completion result as your checkpoint.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 22,
+      "name": "Road to Rehabilitation",
+      "description": "Complete the final mission for Andy.",
+      "grade": "bronze",
+      "guide": "Follow Andy's missions until you finish the final one in that strand. The list does not give the finale's title, so use the character's strand completion rather than an invented mission name to identify the endpoint.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 23,
+      "name": "This Was No Boat Accident",
+      "description": "Complete the final mission for Kenton.",
+      "grade": "bronze",
+      "guide": "Continue Kenton's strand through its final mission. This is a character-specific endpoint, so completing another stranger's finale does not substitute for it; check your recorded unlock after the strand concludes.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 24,
+      "name": "The Lone Rider",
+      "description": "Complete the final mission for Billy.",
+      "grade": "bronze",
+      "guide": "Work through Billy's missions and finish the strand's last assignment. Keep Billy on your side-story checklist until that endpoint, rather than ticking this after the first introduction.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 25,
+      "name": "Strangers & Freaks",
+      "description": "Complete 8 mission strands for strangers across the state of Leonida.",
+      "grade": "silver",
+      "guide": "Finish 8 complete stranger mission strands across Leonida, not just eight individual missions. Research reporting identifies Chapter 3's Race Against Yago as time-sensitive and relevant to this total, so consider handling it during that chapter without treating this as a confirmed missable.\nSources: Output Lag trophy list; GTABase trophy list; GTA-Zone missable reporting — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 8,
+      "countSource": "official description"
+    },
+    {
+      "id": 26,
+      "name": "Supply & Demand",
+      "description": "Complete the final mission for Randy.",
+      "grade": "bronze",
+      "guide": "Complete Randy's final mission after following that character's strand. The published description identifies the character rather than a location, so track the strand's endpoint instead of relying on an unverified map pin.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 27,
+      "name": "Spin On This!",
+      "description": "Complete the final mission for Tyrone.",
+      "grade": "bronze",
+      "guide": "Follow Tyrone's assignments until the last mission is complete. Treat earlier missions as progress toward the strand, and mark this trophy only when its final objective has been finished.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 28,
+      "name": "Positive Mental Attitude",
+      "description": "Meditate at every spot across Leonida.",
+      "grade": "bronze",
+      "guide": "Meditate at every required spot across Leonida. Guide reports describe a Chapter 1 balcony meditation for Lucia that later becomes unavailable, but whether that spot is required for this trophy remains unconfirmed. As a precaution, do it during Chapter 1 and keep a separate Chapter 1 save; reporting distinguishes an 18-spot trophy counter from a 15-of-18 completion checklist.\nSources: Output Lag trophy list; GTABase trophy list; GTA-Zone missable reporting — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": "reported-unconfirmed",
+      "count": 18,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 29,
+      "name": "Fair Game",
+      "description": "Hunt a unique animal for Bret.",
+      "grade": "bronze",
+      "guide": "Complete Bret's request to hunt a unique animal. Keep this task separate from ordinary hunting, because the named character and unique target are the distinguishing requirements; the supplied research does not establish an exact animal location.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "story",
+      "missable": false
+    },
+    {
+      "id": 30,
+      "name": "Don't Touch My Deck",
+      "description": "Complete 3 Collectible Card sets.",
+      "grade": "silver",
+      "guide": "Complete 3 whole Collectible Card sets. Track finished sets rather than individual cards in this counter, and use your collection screen to identify which sets still have gaps.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 3,
+      "countSource": "official description"
+    },
+    {
+      "id": 31,
+      "name": "You WAiNKer!",
+      "description": "WAiNK It at 100 locations.",
+      "grade": "silver",
+      "guide": "Use WAiNK It at 100 locations. Prioritize new locations and record your total after each exploration session; repeatedly using the feature at one place is not a substitute for the location target.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 100,
+      "countSource": "official description"
+    },
+    {
+      "id": 32,
+      "name": "One Last Thing",
+      "description": "Complete 50 Challenges.",
+      "grade": "bronze",
+      "guide": "Complete 50 Challenges, using completed entries rather than attempts as your total. Make this a parallel goal while exploring, then review your challenge record during cleanup to select unfinished tasks.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 50,
+      "countSource": "official description"
+    },
+    {
+      "id": 33,
+      "name": "Hot Together",
+      "description": "Lose a 4 star Wanted Level with your partner and escape the heat.",
+      "grade": "bronze",
+      "guide": "With your partner present, lose a four-star Wanted Level and finish escaping the heat. The partner and escape conditions belong to the same feat, so getting four stars alone does not establish completion.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 34,
+      "name": "Retail Therapy",
+      "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
+      "grade": "bronze",
+      "guide": "Plan a run of 3 shop robberies with your partner while keeping the Wanted Level active between shops. This is a consecutive feat, not a lifetime shop total; start a fresh attempt if the Wanted Level disappears before the chain ends.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 3,
+      "countSource": "official description"
+    },
+    {
+      "id": 35,
+      "name": "Whip It Good",
+      "description": "Discover 100 vehicles.",
+      "grade": "bronze",
+      "guide": "Discover 100 vehicles and record newly discovered ones as you travel. Use the game's discovery total where available, rather than assuming every vehicle you pass has registered as a new discovery.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 100,
+      "countSource": "official description"
+    },
+    {
+      "id": 36,
+      "name": "Gunslinger",
+      "description": "Take down 5 enemies in a single use of Combat Focus.",
+      "grade": "bronze",
+      "guide": "Take down 5 enemies within one activation of Combat Focus. Record the best single-use result here, not your lifetime total, and prepare an encounter with enough targets before attempting the feat.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 5,
+      "countSource": "official description"
+    },
+    {
+      "id": 37,
+      "name": "Catch Me If You Can",
+      "description": "Make an unscheduled departure at VCIA.",
+      "grade": "bronze",
+      "guide": "The published clue places an unscheduled departure at VCIA. The supplied research does not verify the exact trigger, so do not treat a guessed vehicle or exit route as a proven solution; mark this only after the unlock appears.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 38,
+      "name": "Challenging Tank",
+      "description": "Kinda hot in these Rhinos.",
+      "grade": "bronze",
+      "guide": "The official clue refers to Rhinos but does not spell out an action or quantity. The supplied research does not confirm the trigger, so leave this in cleanup and avoid spending resources on an alleged method without further verification.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 39,
+      "name": "Sneakthief",
+      "description": "Rob a jewelry store without being detected.",
+      "grade": "bronze",
+      "guide": "Rob a jewelry store while remaining undetected. Plan around the stealth condition, and treat a detected attempt as practice rather than proof of completion even if you escape with the proceeds.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 40,
+      "name": "Maximum Withdrawal",
+      "description": "Rob 5 Bank Vaults and escape.",
+      "grade": "silver",
+      "guide": "Complete 5 bank-vault robberies with an escape. Count a robbery after the escape condition is satisfied, and keep this running total separate from the named Cartel Heist story trophy.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 5,
+      "countSource": "official description"
+    },
+    {
+      "id": 41,
+      "name": "A Classic Blitz Play",
+      "description": "Rob an Armored Truck and escape.",
+      "grade": "bronze",
+      "guide": "Rob an Armored Truck and escape afterward. The escape is part of the requirement, so do not check this off immediately on opening or looting the truck.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 42,
+      "name": "The Goodtime State",
+      "description": "Explore all of Leonida.",
+      "grade": "bronze",
+      "guide": "Explore the whole state of Leonida and review your map for remaining gaps. The starter uses 52 areas as a tracking aid; use recorded area discovery rather than distance traveled to update that figure.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 52,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 43,
+      "name": "Pest Control",
+      "description": "Rob an Illegal Operation belonging to each gang.",
+      "grade": "bronze",
+      "guide": "Rob an Illegal Operation associated with each gang. Track gang identities, not just the number of robberies; the starter's target is 9, and repeating one gang does not establish coverage of the others.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 9,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 44,
+      "name": "In The Beginning…",
+      "description": "Enjoy a cocktail with a view on Ocean Beach.",
+      "grade": "bronze",
+      "guide": "Enjoy a cocktail with a view at Ocean Beach. The source list names the area but not an exact venue or interaction sequence, so this guide does not invent a specific bar or map coordinate.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 45,
+      "name": "Capital Offense",
+      "description": "Smash your way out of a vehicle showroom in classic style.",
+      "grade": "bronze",
+      "guide": "Carry out the vehicle-showroom escape described by the trophy. The supplied sources do not pin down which showroom or what qualifies as 'classic style,' so keep this as an unverified cleanup trigger until the game confirms the unlock.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 46,
+      "name": "Let’s Go Bowling",
+      "description": "Follow-through at the Kolt & Associates' bowling alley.",
+      "grade": "bronze",
+      "guide": "Use the Kolt & Associates' bowling alley as the location clue. The wording does not confirm a required score or a precise interaction, so avoid assuming that merely entering the alley or playing any bowling activity guarantees this trophy.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 47,
+      "name": "Personal Best",
+      "description": "A partnership with mass appeal.",
+      "grade": "bronze",
+      "guide": "The description points to a partnership but supplies no explicit threshold or action. The supplied research leaves the exact trigger unresolved, so record the unlock when it occurs and do not present a guessed stat target as fact.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 48,
+      "name": "Actions Speak Louder",
+      "description": "Choices made (for better or worse).",
+      "grade": "bronze",
+      "guide": "Keep this on your cleanup list while making choices during play. The starter reports a tracker target of 500, but the description does not define which choices qualify; use the recorded counter rather than assigning points to arbitrary dialogue options.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false,
+      "count": 500,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 49,
+      "name": "Bad Luck, I Guess",
+      "description": "Second time's the charm.",
+      "grade": "bronze",
+      "guide": "The clue mentions a second time without identifying the action. No exact trigger is established by the supplied research, so a generic retry should not be advertised as a verified method; only mark the trophy after the unlock is confirmed.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 50,
+      "name": "The Truth Is Out There",
+      "description": "What the hell just happened?",
+      "grade": "bronze",
+      "guide": "The official wording is deliberately vague and gives no place or action. The supplied research does not resolve the event, so leave this as an unknown-trigger cleanup item rather than following an invented encounter route.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 51,
+      "name": "Ten Pin",
+      "description": "Bowl 'em over with a melee drive-by.",
+      "grade": "bronze",
+      "guide": "Attempt the melee drive-by feat described in the list. No vehicle type, location, or target count is verified in the supplied research, so this guide makes no additional trigger claim; check it off when the unlock confirms success.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": true,
+      "kind": "misc",
+      "missable": false
+    },
+    {
+      "id": 52,
+      "name": "Dime on the Dollar",
+      "description": "Earn $250,000 laundering Marked Bills through your contacts.",
+      "grade": "bronze",
+      "guide": "Earn $250,000 by laundering Marked Bills through your contacts. Record the earnings from that laundering activity rather than your overall cash balance, and do not count unrelated income toward this target.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 250000,
+      "countSource": "official description"
+    },
+    {
+      "id": 53,
+      "name": "Treat Yo Self",
+      "description": "Spend $100,000 across all shops.",
+      "grade": "bronze",
+      "guide": "Spend a cumulative $100,000 across shops. Track spending rather than your remaining balance; combine necessary purchases with this goal so you do not buy items solely to fill a counter.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 100000,
+      "countSource": "official description"
+    },
+    {
+      "id": 54,
+      "name": "Little Boxes",
+      "description": "Purchase all garage properties.",
+      "grade": "bronze",
+      "guide": "Purchase every garage property. The starter gives 8 properties as its tracker target, so keep a property checklist and compare ownership against the game's property listings before marking this earned.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "collectible",
+      "missable": false,
+      "count": 8,
+      "countSource": "starter tracker / guide reporting; not enumerated in description"
+    },
+    {
+      "id": 55,
+      "name": "On the Spot",
+      "description": "Register 10 vehicles to the Scooter Bros app.",
+      "grade": "bronze",
+      "guide": "Register 10 vehicles using the Scooter Bros app. Count completed registrations rather than vehicles merely discovered, since discovery is tracked by the separate Whip It Good trophy.\nSources: Output Lag trophy list; GTABase trophy list — accessed 19 Nov 2026 (supplied research).",
+      "hidden": false,
+      "kind": "misc",
+      "missable": false,
+      "count": 10,
+      "countSource": "official description"
+    }
+  ],
+  "sourceNote": "Names, descriptions and grades cross-checked in supplied research against Output Lag and GTABase. Exophase is a reported origin, not directly fetched; PSNProfiles was not used. Extra counter totals come from starter tracking hints and guide reporting."
 }
