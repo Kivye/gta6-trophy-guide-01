@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 const html=readFileSync('app/index.html','utf8');
 const doc=JSON.parse(readFileSync('app/data/trophies.json','utf8'));
+const enr=JSON.parse(readFileSync('app/data/enrichment.json','utf8'));
 // Fingerprint of the starter's official names, descriptions and grades.
 const facts=doc.trophies.map(({name,description,grade})=>({name,description,grade}));
 assert.equal(createHash('sha256').update(JSON.stringify(facts)).digest('hex'),'b107b6ffcd78b849de4e94fdbca9aeca7964ef6f0b0876fed6e6824b5b0291ff');
@@ -20,6 +21,11 @@ assert.equal(doc.trophies.filter(t=>t.missable===true).length,0);
 assert.deepEqual(doc.trophies.filter(t=>t.missable).map(t=>t.name),['Positive Mental Attitude']);
 assert.deepEqual(['platinum','gold','silver','bronze'].map(g=>doc.trophies.filter(t=>t.grade===g).length),[1,2,6,46]);
 assert.deepEqual(JSON.parse(html.match(/<script id="trophy-data" type="application\/json">([\s\S]*?)<\/script>/)[1]),doc);
+assert.deepEqual(JSON.parse(html.match(/<script id="trophy-enrichment" type="application\/json">([\s\S]*?)<\/script>/)[1]),enr);
+assert.equal(Object.keys(enr.trophies).length,55);
+assert.deepEqual(['01 Follow the story','02 Missable-first','03 Explore & collect','04 Big counters','05 Clean up & audit'].map(s=>Object.values(enr.trophies).filter(e=>e.stage===s).length),[18,1,6,8,22]);
+assert.deepEqual(Object.entries(enr.trophies).filter(([,e])=>e.confidence==='Reported — Unconfirmed').map(([id])=>id),['28']);
+for(const [id,e] of Object.entries(enr.trophies)){assert.ok(e.steps.length>=2 && e.steps.length<=4,`${id}: steps`);assert.ok(enr.meta.stageValues.includes(e.stage));assert.ok(enr.meta.confidenceValues.includes(e.confidence));}
 assert.ok(!/\bfetch\s*\(|XMLHttpRequest|https?:\/\//.test(readFileSync('app/app.js','utf8')));
 const checks=[];
 class Element{
@@ -31,11 +37,11 @@ class Element{
 }
 const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 const elements=Object.fromEntries(ids.map(id=>[id,new Element(id)]));
-for(const id of ['grade','kind','status','missable']){
+for(const id of ['grade','stage','kind','status','missable']){
  const select=html.match(new RegExp(`<select id="${id}">([\\s\\S]*?)<\\/select>`))[1];
  elements[id].options=[...select.matchAll(/value="([^"]+)"/g)].map(x=>({value:x[1]}));
 }
-elements['trophy-data'].textContent=JSON.stringify(doc);elements.search.value='';
+elements['trophy-data'].textContent=JSON.stringify(doc);elements['trophy-enrichment'].textContent=JSON.stringify(enr);elements.search.value='';
 let store={};let eventHandlers={};let exported;
 const location={hash:''};
 const document={getElementById:id=>elements[id],body:new Element('body'),createElement:()=>new Element('download')};
@@ -64,5 +70,17 @@ hash('#');await elements.export.click();const backup=JSON.parse(await exported.t
 elements.import.files=[{size:100,text:async()=>JSON.stringify({version:1,earned:[2,3,7],counts:{'15':87}})}];await elements.import.emit('change');assert.equal(JSON.parse(store['leonida-ledger-v1']).earned.length,3);assert.match(elements['import-status'].textContent,/Imported 3/);checks.push('Valid import replaces progress');
 elements.import.files=[{size:100,text:async()=>JSON.stringify({version:1,earned:[999],counts:{}})}];await elements.import.emit('change');assert.equal(JSON.parse(store['leonida-ledger-v1']).earned.length,3);assert.match(elements['import-status'].textContent,/Import failed/);checks.push('Invalid import preserves progress');
 const beforeDemo=store['leonida-ledger-v1'];hash('#demo=1');assert.equal(elements.percent.textContent,'13%');assert.equal(JSON.parse(store['leonida-ledger-v1']).earned.length,3);hash('#');assert.equal(store['leonida-ledger-v1'],beforeDemo);assert.equal(elements.progress.textContent,'3 / 55 earned');checks.push('Demo isolation and restoring saved state');
+hash('#stage=02');assert.equal(rows(),1);assert.match(elements.rows.innerHTML,/Positive Mental Attitude/);checks.push('Stage filter isolates the flagged candidate');
+hash('#stage=01');assert.equal(rows(),18);hash('#stage=05');assert.equal(rows(),22);checks.push('Stage filter counts match the enrichment distribution (18 / 22)');
+hash('#');assert.equal((elements.rows.innerHTML.match(/tag stage/g)||[]).length,55);assert.equal((elements.rows.innerHTML.match(/tag conf/g)||[]).length,55);checks.push('Every card carries stage and confidence badges');
+hash('#guide=positive-mental-attitude');assert.match(elements.rows.innerHTML,/STEP-BY-STEP/);assert.match(elements.rows.innerHTML,/During Chapter 1, meditate at Lucia/);checks.push('Guide renders the authored numbered steps');
+hash('#');assert.match(elements['next-up'].innerHTML,/NEXT UP/);assert.equal((elements['next-up'].innerHTML.match(/next-chip/g)||[]).length,3);checks.push('Next Up recommends three unearned trophies');
+hash('#view=matrix');assert.equal(elements.matrix.hidden,false);assert.equal((elements['matrix-grid'].innerHTML.match(/class="mx-chip/g)||[]).length,55);assert.equal(elements['matrix-count'].textContent,55);checks.push('Matrix renders all 55 trophies as cells');
+assert.match(elements['matrix-grid'].innerHTML,/mx-chip[^"]*flagged/);checks.push('Matrix highlights the flagged missable candidate');
+const mxDone=new Element('mx');mxDone.dataset={mx:'done'};await elements['matrix-filters'].emit('click',mxDone);assert.equal(elements['matrix-count'].textContent,3);checks.push('Matrix quick filter: earned only');
+const mxAll=new Element('mx');mxAll.dataset={mx:'all'};await elements['matrix-filters'].emit('click',mxAll);assert.equal(elements['matrix-count'].textContent,55);checks.push('Matrix quick filter: back to all');
+hash('#spoiler=1&view=matrix');assert.ok(!elements['matrix-grid'].innerHTML.includes('T**s Ass Drug Money'));assert.match(elements['matrix-grid'].innerHTML,/Spoiler-protected/);checks.push('Spoiler protection masks matrix names');
+hash('#view=roadmap');assert.match(elements['count-01'].textContent,/18 trophies/);assert.match(elements['count-02'].textContent,/1 trophy ·/);assert.match(elements['count-05'].textContent,/22 trophies/);checks.push('Roadmap stage counts computed from the stage field');
+hash('#');
 console.log('DATA + INTERACTION HARNESS PASS\n'+checks.map(x=>'✓ '+x).join('\n'));
 console.log('Note: this harness tests state and rendered HTML strings; it does not substitute for Chrome visual verification.');

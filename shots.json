@@ -1,6 +1,6 @@
 [
   {"file":"01-cover.jpg","path":"/index.html#demo=1","viewport":{"width":1280,"height":800},"note":"Isolated demo save: 7 earned; checklist and filters."},
-  {"file":"02-guide-open.jpg","path":"/index.html#demo=1&guides=all","viewport":{"width":1280,"height":800},"note":"All guides expanded at once: original guide text + Sources citation lines readable."},
-  {"file":"03-roadmap.jpg","path":"/index.html#demo=1&view=roadmap","viewport":{"width":1280,"height":800},"note":"Five-stage plan and honest missable analysis."},
-  {"file":"04-spoiler-filters.jpg","path":"/index.html#demo=1&spoiler=1&grade=bronze&status=open&backup=1","viewport":{"width":1280,"height":800},"note":"Protected unearned story names, bronze + unearned filters, backup controls."}
+  {"file":"02-matrix.jpg","path":"/index.html#demo=1&view=matrix","viewport":{"width":1280,"height":800},"note":"Completion matrix: all 55 trophies mapped across 5 stages and 4 grades, flagged candidate highlighted."},
+  {"file":"03-roadmap.jpg","path":"/index.html#demo=1&view=roadmap","viewport":{"width":1280,"height":800},"note":"Five-stage plan with dynamic per-stage counts, honest missable analysis and the persistent source rail."},
+  {"file":"04-spoiler-filters.jpg","path":"/index.html#demo=1&spoiler=1&grade=bronze&status=open&stage=01&backup=1","viewport":{"width":1280,"height":800},"note":"Protected unearned story names, bronze + unearned + stage filters, backup controls."}
 ]
