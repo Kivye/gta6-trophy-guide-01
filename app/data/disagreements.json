@@ -1,0 +1,142 @@
+{
+ "disagreements": [
+  {
+   "topic": "Is the Chapter 1 balcony meditation required for Positive Mental Attitude?",
+   "trophyIds": [
+    28
+   ],
+   "versionA": {
+    "claim": "The balcony session counts toward the trophy: it adds +1 to the Meditations counter, the window closes when Chapter 1 ends, and the guide author who earned the trophy had done it.",
+    "sources": [
+     1,
+     3,
+     4
+    ]
+   },
+   "versionB": {
+    "claim": "It may not be required at all: the session is not marked as a Meditation Spot like the other 18, and the 100% checklist needs only 15 of 18 meditations either way.",
+    "sources": [
+     1,
+     2
+    ]
+   },
+   "ruling": "Both versions shown. This edition flags the trophy as possibly missable — not confirmed missable — because the counter evidence (+1, a closing window) is real but no source confirms the requirement. Do the session and keep a Chapter 1 save: it costs minutes and removes the only known Platinum risk."
+  },
+  {
+   "topic": "How long does the Platinum take?",
+   "trophyIds": [
+    1,
+    14
+   ],
+   "versionA": {
+    "claim": "About 200 hours: roughly 60–80 for the story, about 100 for the 100% checklist and about 10–20 of cleanup.",
+    "sources": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ]
+   },
+   "versionB": {
+    "claim": "Up to 300 hours or more, per Push Square's trophy guide (as reported in launch-week coverage read for this edition).",
+    "sources": []
+   },
+   "ruling": "The edition prints ~200 hrs as the band because six consulted guides converge on it, and shows the 300 hrs figure beside it. Both are launch-week estimates, not measured averages; expect the real number to move as completion data arrives."
+  },
+  {
+   "topic": "Which chapter holds the final mission?",
+   "trophyIds": [
+    7
+   ],
+   "versionA": {
+    "claim": "The final mission (Starting From Zero) closes Chapter 4 — both the Chapter 4 trophy and the final-mission Gold are described as unlocking after it.",
+    "sources": [
+     1
+    ]
+   },
+   "versionB": {
+    "claim": "The final mission belongs to Chapter 5: Beebom and CULTR word it that way, and the story's fifth chapter carries its own late missions, such as Operation Savage Glory.",
+    "sources": [
+     7,
+     1,
+     4
+    ]
+   },
+   "ruling": "Both wordings shown. Nothing practical turns on it: the Gold pops when the final mission ends, whichever chapter the game files it under. Keep a save before the finale either way."
+  },
+  {
+   "topic": "How many bank vaults are there — 5, 8 or 22?",
+   "trophyIds": [
+    40
+   ],
+   "versionA": {
+    "claim": "Five: the trophy's own description asks for 5 vault robberies, and every consulted list repeats that figure for the trophy.",
+    "sources": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ]
+   },
+   "versionB": {
+    "claim": "Eight large bank vaults exist and the 100% checklist requires all 8; a separate robbery table also counts 22 Bank Jobs as their own category.",
+    "sources": [
+     1,
+     2,
+     4
+    ]
+   },
+   "ruling": "Not a true conflict — three numbers, three categories. The counter in this guide tracks the trophy's 5; the checklist's 8 and the 22 smaller bank jobs are labelled as what they are wherever they appear."
+  },
+  {
+   "topic": "How many shooting ranges hold the 42 gold medals?",
+   "trophyIds": [
+    17
+   ],
+   "versionA": {
+    "claim": "Twelve ranges share the 42 challenges between them.",
+    "sources": [
+     1,
+     4,
+     5
+    ]
+   },
+   "versionB": {
+    "claim": "Two ranges hold the 42 gold medals between them.",
+    "sources": [
+     3
+    ]
+   },
+   "ruling": "The requirement itself — a gold in every challenge, 42 in total — is unanimous, so the guide prints that and flags the range count as unsettled until the map is fully documented."
+  },
+  {
+   "topic": "Four hidden trophies: methods published, or still unknown?",
+   "trophyIds": [
+    44,
+    45,
+    50,
+    51
+   ],
+   "versionA": {
+    "claim": "PowerPyx's guide, as read on 20 Nov 2026, publishes a concrete method for each of the four: a named bar and drink, a specific showroom car, a night-time UFO encounter, and a timed bike-kick feat.",
+    "sources": [
+     1
+    ]
+   },
+   "versionB": {
+    "claim": "KeenGamer, GTABase, GTA-Zone and eGamers (18–19 Nov) all list the exact steps for these four as unconfirmed.",
+    "sources": [
+     2,
+     4,
+     5,
+     7
+    ]
+   },
+   "ruling": "Both versions shown. The four carry PowerPyx-only methods in this edition, flagged 1 SRC on every card and in the matrix, and should be treated as provisional until a second source confirms them. Bad Luck, I Guess (#49) is different: no source publishes a method, so it stays unconfirmed with no steps at all."
+  }
+ ]
+}

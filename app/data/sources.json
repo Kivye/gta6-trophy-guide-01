@@ -1,0 +1,60 @@
+{
+ "sources": [
+  {
+   "n": 1,
+   "name": "PowerPyx",
+   "url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+   "depth": "Full method walkthrough",
+   "readDate": "2026-11-20",
+   "note": "Primary method source: per-trophy methods, the meditation sequence, roadmap phases, difficulty 4/10 and the ~200-hour estimate."
+  },
+  {
+   "n": 2,
+   "name": "KeenGamer",
+   "url": "https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/",
+   "depth": "Full page",
+   "readDate": "2026-11-20",
+   "note": "Numbered roadmap steps, the fullest 100% checklist tables, and a step-by-step for the Chapter 1 meditation."
+  },
+  {
+   "n": 3,
+   "name": "Output Lag",
+   "url": "https://outputlag.com/guides/gta-6-trophy-list/",
+   "depth": "Full page",
+   "readDate": "2026-11-20",
+   "note": "Full list with method sections; the four save rules, the Yago timed-race warning and the chapter-save checklist."
+  },
+  {
+   "n": 4,
+   "name": "GTABase",
+   "url": "https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series",
+   "depth": "Full page",
+   "readDate": "2026-11-20",
+   "note": "List and metadata cross-check with a how-to note on every trophy, Gamerscore values and the 100% requirements summary."
+  },
+  {
+   "n": 5,
+   "name": "GTA-Zone",
+   "url": "https://gta-zone.com/news/gta-6-trophies-achievements/",
+   "depth": "Full page",
+   "readDate": "2026-11-20",
+   "note": "One-line methods, roadmap and FAQ; the missable reporting and the five then-unpinned hidden trophies."
+  },
+  {
+   "n": 6,
+   "name": "Exophase",
+   "url": "https://www.exophase.com/game/gta-vi-ps5/",
+   "depth": "List & metadata only (indirect)",
+   "readDate": "2026-11-20",
+   "note": "The public PS5 list itself, as reported by Push Square from Exophase's listing (55 trophies including a Platinum). The direct page did not resolve in this session (404 at the listed address), so no method content is taken from it; it anchors the list's provenance only."
+  },
+  {
+   "n": 7,
+   "name": "eGamers",
+   "url": "https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/",
+   "depth": "Full page",
+   "readDate": "2026-11-20",
+   "note": "Hardest-trophy analysis, a trophy-vs-checklist target table, and the final-mission chapter wording dispute."
+  }
+ ]
+}

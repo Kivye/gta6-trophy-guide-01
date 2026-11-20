@@ -1,0 +1,190 @@
+{
+ "difficulty": "4/10",
+ "playthroughs": 1,
+ "totalHours": "~200 hrs",
+ "totalHoursNote": "300 hrs also in print — see Disagreements",
+ "hoursBasis": "Stage bands allocate the source-reported phase totals (story 60–80 hrs · 100% checklist about 100 hrs · cleanup 10–20 hrs) [1][2][4].",
+ "stages": [
+  {
+   "key": "01 Follow the story",
+   "hours": {
+    "lo": 60,
+    "hi": 80,
+    "label": "60–80 hrs"
+   },
+   "trophyIds": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    22,
+    23,
+    24,
+    26,
+    27,
+    29
+   ],
+   "text": "Play the five chapters and take optional missions as they appear. Scan every new vehicle with WAiNK and study animals through the binoculars as you go — both quotas are far cheaper when collected along the way than hunted afterwards. Nothing in this stage can be missed except the one session waiting in Stage 02."
+  },
+  {
+   "key": "02 Missable-first",
+   "hours": {
+    "lo": 0,
+    "hi": 0,
+    "label": "inside Stage 01"
+   },
+   "trophyIds": [
+    28
+   ],
+   "text": "One trophy, one window: Lucia's balcony meditation in Chapter 1. It rides inside the story hours and costs minutes, but it is the only moment in the game that closes for good. Do it the morning after Down to Earth and keep the Chapter 1 save until the trophy pops."
+  },
+  {
+   "key": "03 Explore & collect",
+   "hours": {
+    "lo": 30,
+    "hi": 40,
+    "label": "30–40 hrs"
+   },
+   "trophyIds": [
+    16,
+    30,
+    31,
+    35,
+    42,
+    54
+   ],
+   "text": "Open up Leonida: card sets, WAiNK scans, vehicle discoveries and the full map unfog. These quotas overlap heavily with the 100% checklist, so work them inside the checklist routes rather than as separate trips."
+  },
+  {
+   "key": "04 Big counters",
+   "hours": {
+    "lo": 50,
+    "hi": 60,
+    "label": "50–60 hrs"
+   },
+   "trophyIds": [
+    15,
+    17,
+    18,
+    19,
+    25,
+    32,
+    52,
+    53
+   ],
+   "text": "The long arithmetic of the Platinum: 250 stunts (300 for the checklist), 42 range golds, 42 drone races, 50 challenges on the way to 70, and the money totals. Spread them through the checklist phase instead of grinding any single counter cold."
+  },
+  {
+   "key": "05 Clean up & audit",
+   "hours": {
+    "lo": 10,
+    "hi": 20,
+    "label": "10–20 hrs"
+   },
+   "trophyIds": [
+    1,
+    14,
+    20,
+    21,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    55
+   ],
+   "text": "Everything the checklist did not already hand you: the robbery set pieces, partner feats, one-off hidden moments and the 100% audit itself. Most of these pop along the way; what remains is a short, named list — finish it, and the Platinum closes the book."
+  }
+ ],
+ "groundRules": [
+  "One playthrough is enough — there is no difficulty setting, no New Game+ and no mission replay. [1][4]",
+  "Keep a manual save at the start and end of every chapter; 15 manual slots exist, so rotate the spare ones through free-roam cleanup. [1][3]",
+  "Never use cheats on a trophy run — they disable trophies and saving (for the current session, on GTABase's reading). [1][4][5]",
+  "Mission medals do not exist this time — no trophy asks for a gold on a story mission, so play missions your way. [1][3]",
+  "Do optional missions as they appear; some disappear, and the checklist needs any 100 of them. [1][4]",
+  "Avoid the Irredeemable criminal profile — it is permanent, and police will shoot on sight far more often. [1][5]"
+ ],
+ "checkpoints": [
+  {
+   "n": 1,
+   "label": "Save #1 — Start of Chapter 1",
+   "text": "Your fallback from before the balcony window can close.",
+   "trophyIds": [
+    28
+   ]
+  },
+  {
+   "n": 2,
+   "label": "Save #2 — Morning after Down to Earth (Chapter 1)",
+   "text": "Make it right after accepting Lucia's balcony meditation, with the counter at +1.",
+   "trophyIds": [
+    28
+   ]
+  },
+  {
+   "n": 3,
+   "label": "Save #3 — Start of Chapter 2, before Coffee Break",
+   "text": "Coffee Break unlocks two-character play; the final meditation spot and the partner trophies open from here.",
+   "trophyIds": [
+    28,
+    33,
+    47
+   ]
+  },
+  {
+   "n": 4,
+   "label": "Save #4 — Chapter starts 3, 4 and 5",
+   "text": "One untouched save at each remaining chapter start; quest givers and strands shift as the story moves.",
+   "trophyIds": [
+    25,
+    23
+   ]
+  },
+  {
+   "n": 5,
+   "label": "Save #5 — Before the final mission",
+   "text": "An untouched pre-finale save; there is no mission replay if anything is left hanging on the story.",
+   "trophyIds": [
+    7
+   ]
+  }
+ ],
+ "watchList": [
+  {
+   "trophyId": 28,
+   "text": "the Chapter 1 balcony session disappears when the chapter ends; its requirement is unconfirmed, the precaution is not optional."
+  },
+  {
+   "trophyId": 25,
+   "text": "Yago's Chapter 3 strand carries an hourglass race (Race Against Yago); run it the moment it appears."
+  },
+  {
+   "trophyId": 23,
+   "text": "Kenton's line — the quest giver goes quiet after Chapter 1 and returns in Chapter 2–3; not missable, but easy to mistake for a lockout."
+  },
+  {
+   "trophyId": 7,
+   "text": "Final mission — no mission replay exists; keep the pre-finale save untouched."
+  }
+ ]
+}

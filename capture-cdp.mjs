@@ -1,88 +1,97 @@
-// Drive headless Chrome over CDP to capture the built app at four hash states.
-// The one-shot --screenshot mode produces no file in this environment, so this
-// driver navigates, waits for load, probes the DOM, and captures the surface.
+// capture-cdp.mjs — shoots the 4 v4 frames from out/ with headless Chrome
+// over CDP at 1280x800. Authored in-session.
+// Usage: node capture-cdp.mjs
 import { spawn } from 'node:child_process';
-import { writeFileSync, mkdirSync } from 'node:fs';
-import { setTimeout as sleep } from 'node:timers/promises';
+import { writeFileSync, existsSync, rmSync, mkdirSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const CHROME = '/opt/meta-chromium/chrome';
+const root = dirname(fileURLToPath(import.meta.url));
 const PORT = 9333;
-const outDir = process.argv[2];
-const base = process.argv[3];
-const shots = [
-  ['01-cover', 'demo=1'],
-  ['02-matrix', 'demo=1&view=matrix'],
-  ['03-roadmap', 'demo=1&view=roadmap'],
-  ['04-spoiler-filters', 'demo=1&spoiler=1&grade=bronze&status=open&stage=01&backup=1'],
+const PROFILE = '/tmp/ll-capture-profile';
+const SHOTS = [
+  { hash: '', file: 'screenshots/01-cover.jpg' },
+  { hash: '#view=roadmap', file: 'screenshots/02-roadmap.jpg' },
+  { hash: '#view=matrix', file: 'screenshots/03-matrix.jpg' },
+  { hash: '#view=missables', file: 'screenshots/04-disagreements.jpg' }
 ];
-if (!outDir || !base) { console.error('usage: capture-cdp.mjs <png-dir> <file-url-of-out/index.html>'); process.exit(2); }
-mkdirSync(outDir, { recursive: true });
 
-const chrome = spawn(CHROME, [
+if (!existsSync('/tmp/webgl-policy.txt')) writeFileSync('/tmp/webgl-policy.txt', '');
+rmSync(PROFILE, { recursive: true, force: true });
+mkdirSync(join(root, 'screenshots'), { recursive: true });
+
+const chrome = spawn('/opt/meta-chromium/chrome', [
   '--headless=new', '--no-sandbox', '--disable-gpu', '--hide-scrollbars',
+  `--remote-debugging-port=${PORT}`, `--user-data-dir=${PROFILE}`,
   '--window-size=1280,800',
   '--hatch-webgl-allowed-domains-file=/tmp/webgl-policy.txt',
   '--hatch-webgl-allowed-domains-sha256=c5c85869591ff8b3491450f49cfd62912c6dd41e5cecada4e831191d3185035e',
-  '--user-data-dir=/tmp/trophy-chrome-cdp', `--remote-debugging-port=${PORT}`, 'about:blank',
+  'about:blank'
 ], { stdio: 'ignore' });
 
-async function pageSocket() {
-  for (let attempt = 0; attempt < 50; attempt++) {
-    try {
-      const targets = await (await fetch(`http://127.0.0.1:${PORT}/json/list`)).json();
-      const page = targets.find(t => t.type === 'page');
-      if (page) return page.webSocketDebuggerUrl;
-    } catch (error) { /* Chrome not up yet */ }
-    await sleep(200);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+async function waitEndpoint() {
+  for (let i = 0; i < 60; i++) {
+    try { const r = await fetch(`http://127.0.0.1:${PORT}/json/version`); if (r.ok) return await r.json(); } catch (e) { /* retry */ }
+    await sleep(250);
   }
-  throw new Error('Chrome DevTools endpoint never came up.');
+  throw new Error('chrome devtools endpoint never came up');
 }
 
-const ws = new WebSocket(await pageSocket());
-await new Promise((resolve, reject) => { ws.onopen = resolve; ws.onerror = reject; });
-let nextId = 0;
-const pending = new Map();
-const listeners = new Map();
-const consoleErrors = [];
-ws.onmessage = event => {
-  const message = JSON.parse(event.data);
-  if (message.id && pending.has(message.id)) {
-    const { resolve, reject } = pending.get(message.id);
-    pending.delete(message.id);
-    message.error ? reject(new Error(JSON.stringify(message.error))) : resolve(message.result);
-  } else if (message.method) {
-    if (message.method === 'Runtime.exceptionThrown') consoleErrors.push('exception: ' + (message.params.exceptionDetails.text || 'unknown'));
-    if (message.method === 'Runtime.consoleAPICalled' && message.params.type === 'error') consoleErrors.push('console: ' + message.params.args.map(a => a.value || a.description || '').join(' '));
-    for (const fn of listeners.get(message.method) || []) fn(message.params);
-  }
-};
+let ws, seq = 0; const pending = new Map();
 function send(method, params = {}) {
-  const id = ++nextId;
-  return new Promise((resolve, reject) => { pending.set(id, { resolve, reject }); ws.send(JSON.stringify({ id, method, params })); });
-}
-function once(method, timeoutMs) {
-  return new Promise(resolve => {
-    const timer = setTimeout(() => resolve(false), timeoutMs);
-    listeners.set(method, [...(listeners.get(method) || []), () => { clearTimeout(timer); resolve(true); }]);
+  return new Promise((resolve, reject) => {
+    const id = ++seq; pending.set(id, { resolve, reject });
+    ws.send(JSON.stringify({ id, method, params }));
   });
+}
+async function evaluate(expr) {
+  const r = await send('Runtime.evaluate', { expression: expr, returnByValue: true, awaitPromise: true });
+  if (r.exceptionDetails) throw new Error('evaluate failed: ' + JSON.stringify(r.exceptionDetails).slice(0, 300));
+  return r.result ? r.result.value : undefined;
 }
 
-await send('Page.enable');
-await send('Runtime.enable');
-await send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 800, deviceScaleFactor: 1, mobile: false });
-for (const [name, hash] of shots) {
-  const loaded = once('Page.loadEventFired', 2500);
-  await send('Page.navigate', { url: `${base}#${hash}` });
-  await loaded;
-  await sleep(900);
-  const probe = await send('Runtime.evaluate', {
-    expression: `JSON.stringify({rows: document.querySelectorAll('.trophy').length, chips: document.querySelectorAll('.mx-chip').length, scrollY: Math.round(window.scrollY), title: document.title})`,
-    returnByValue: true,
-  });
-  const shot = await send('Page.captureScreenshot', { format: 'png', fromSurface: true });
-  writeFileSync(`${outDir}/${name}.png`, Buffer.from(shot.data, 'base64'));
-  console.log(name, probe.result.value);
+try {
+  await waitEndpoint();
+  const targets = await (await fetch(`http://127.0.0.1:${PORT}/json/list`)).json();
+  const page = targets.find(t => t.type === 'page');
+  if (!page) throw new Error('no page target');
+  ws = new WebSocket(page.webSocketDebuggerUrl);
+  await new Promise((res, rej) => { ws.onopen = res; ws.onerror = rej; });
+  ws.onmessage = ev => {
+    const msg = JSON.parse(ev.data);
+    if (msg.id && pending.has(msg.id)) {
+      const p = pending.get(msg.id); pending.delete(msg.id);
+      if (msg.error) p.reject(new Error(msg.error.message)); else p.resolve(msg.result);
+    }
+  };
+  await send('Page.enable');
+  await send('Runtime.enable');
+  await send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 800, deviceScaleFactor: 1, mobile: false });
+  const base = 'file://' + join(root, 'out', 'index.html');
+  let first = true;
+  for (const shot of SHOTS) {
+    await send('Page.navigate', { url: base + shot.hash });
+    if (!first) {
+      // frames 2-4 are shot with the app's own spoiler toggle OFF, so trophy
+      // names show on roadmap chips and matrix cells (the toggle is a real
+      // app feature; frame 1 keeps the default shielded state)
+      await evaluate(`(() => { const b = document.querySelector('#spoiler-toggle'); if (b && b.textContent.includes('hidden')) b.click(); })()`);
+    }
+    first = false;
+    // wait until the app has rendered its audit strip, then settle
+    for (let i = 0; i < 40; i++) {
+      const ready = await evaluate(`!!document.querySelector('#audit-strip .audit-metric')`);
+      if (ready) break;
+      await sleep(200);
+    }
+    await sleep(700);
+    const shotRes = await send('Page.captureScreenshot', { format: 'jpeg', quality: 84 });
+    const buf = Buffer.from(shotRes.data, 'base64');
+    writeFileSync(join(root, shot.file), buf);
+    console.log(shot.file, buf.length, 'bytes');
+  }
+} finally {
+  try { if (ws) ws.close(); } catch (e) { /* noop */ }
+  chrome.kill('SIGKILL');
 }
-console.log('console_errors=' + consoleErrors.length, consoleErrors.join(' | '));
-ws.close();
-chrome.kill('SIGTERM');
